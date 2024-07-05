@@ -1,0 +1,273 @@
+body {
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+
+
+  display: flex;
+  flex-direction: column;
+  padding: 88px 0px 88px 0px;
+
+
+
+}
+
+header {
+  background-color: #85a52b;
+  box-shadow: 0px 5px 5px #061a0e40;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 8px 0px 12px 200px;
+
+}
+
+header h1 {
+
+  font-family: righteous;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 44px;
+  letter-spacing: -1.2%;
+
+}
+
+header h2 {
+  font-family: roboto;
+  color: #061a03;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+  letter-spacing: 0.012em;
+}
+
+main {
+  margin: 0px auto;
+}
+
+main h1 {
+  color: #333333;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32.28px;
+  letter-spacing: 1.8%;
+  font-family: righteous;
+  margin-left: 19px;
+  margin-top: 27px;
+  margin-bottom: 17px;
+
+
+}
+
+.menu-categoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-menu {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+
+
+
+
+}
+
+.item-menu {
+  background-color: #FFFFFF;
+  border-radius: 9px;
+  width: 172px;
+  padding: 18px 14px;
+  margin: 0px 7px;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  border: solid 4px rgba(49, 183, 47, 0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.item-menu.ok::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #CF2B2B;
+  background: url('../assets/ok.png') no-repeat;
+  background-size: contain;
+  right: 10px;
+  bottom: 10px;
+}
+
+.ativado {
+  border: solid 4px rgb(49, 183, 47);
+
+}
+
+.item-menu:nth-child(1) {
+  margin-left: 19px;
+}
+
+.item-menu h1 {
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #333333;
+  margin: 8px 0px 4px 0px;
+
+}
+
+.item-menu p {
+  margin-top: 4px;
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17.58px;
+  color: #A6A6A6;
+
+
+}
+
+.item-menu h2 {
+  margin-top: 10px;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #000000;
+
+}
+
+
+footer {
+  background-color: #FFFFFF;
+  height: 92px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  padding: 15px 25px;
+  text-align: center;
+
+}
+
+footer button {
+  width: 70%;
+  height: 61px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(203, 203, 203, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+}
+
+.bg-green {
+  background-color: rgb(16, 87, 15);
+  transition: 0.5s;
+}
+
+.bg-green:hover {
+  width: 95%;
+}
+
+footer button p {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 20px;
+  width: 18ch;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
+
+}
+
+.clicavel {
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+
+.sobreposto {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 414px;
+  height: 100%;
+  background-color: rgba(238, 238, 238, 0.877);
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s, top 0.5s;
+}
+
+
+.al-esquerda {
+  text-align: left;
+}
+
+.al-direita {
+  text-align: right;
+}
+
+.resumoPedido {
+  background-color: rgba(80, 208, 116, 1);
+  padding: 25px 21px 0px 21px;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  line-height: 25.78px;
+  font-weight: 300;
+  width: 90%;
+
+  text-align: center;
+}
+
+.resumoPedido h2 {
+  height: 27px;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.itensPedido {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.itensPedido p {
+  margin-bottom: 15px;
+  letter-spacing: 0.018rem;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.opcoes button {
+  border-radius: 100px;
+  border: none;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.78px;
+  height: 52px;
+  color: rgba(80, 208, 116, 1);
+  background-color: #FFFFFF;
+}
+
+.opcoes button:nth-child(2) {
+  background-color: rgba(49, 183, 47, 0);
+  color: #FFFFFF;
+  font-size: 20px;
+}

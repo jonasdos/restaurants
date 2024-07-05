@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurantz home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/reset.css"/>
+  <link rel="stylesheet" href="style/style.css"/>
+
+</head>
+<body>
+
+  <div id="resumoPedido" class="sobreposto">
+    <div class="resumoPedido">
+      <h2>Confirme seu pedido</h2>
+      
+      <div class="itensPedido">
+        <div class="al-esquerda">
+          <p>nome do prato</p>
+          <p>nome do prato</p>
+          <p>nome do prato</p>
+        </div>
+        <div class="al-direita">
+          <p>Valor</p>
+          <p>Valor</p>
+          <p>Valor</p>
+        </div>
+      </div>
+      <div class="itensPedido">
+        <div>
+          <h2>TOTAL</h2>
+        </div>
+        <div>
+          <h2 id="total">Valor</h2>
+        </div>
+      </div>
+      
+      
+      <div class="opcoes">
+        <button id="aceitarBtn" class="clicavel">Tudo certo, pode pedir!</button>
+        
+        <button id="recusarBtn" class="clicavel">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div id="header-logo">
+    <h1>Restaurantz</h1>
+    <h2>Food-Service</h2>
+    </div>
+  </header>
+  <main>
+    <div class="menu-categoria">
+      <div class="titulo-menu">
+        <h1>Primeiro, seu prato</h1>
+      </div>
+      <div class="container-menu">
+        <div class="item-menu prato" >
+          <img src="./assets/prato1.png">
+          <h1>Yin Yang</h1>
+          <p>Um pouco de batata, um pouco de salada</p>
+          <h2>R$ 14,90</h2>
+        </div>
+        <div class="item-menu prato" >
+          <img src="./assets/prato1.png">
+          <h1>Yin Yang</h1>
+          <p>Um pouco de batata, um pouco de salada</p>
+          <h2>R$ 14,90</h2>
+        </div>
+        <div class="item-menu prato">
+          <img src="./assets/prato2.png">
+          <h1>Refeição Top</h1>
+          <p>arroz, feijão branco e salada</p>
+          <h2>R$ 22,90</h2>
+        </div>
+        <div class="item-menu prato">
+          <img src="./assets/prato3.png">
+          <h1>A colossal</h1>
+          <p>arroz, feijão preto + salada e batata</p>
+          <h2>R$ 29,90</h2>
+        </div>
+      </div>
+    </div>
+    <div class="menu-categoria">
+      <div class="titulo-menu">
+        <h1>Agora, sua bebida</h1>
+      </div>
+      <div class="container-menu">
+        <div class="item-menu bebida">
+          <img src="./assets/bebida1.png">
+          <h1>Coquinha gelada</h1>
+          <p>Lata 350ml</p>
+          <h2>R$ 4,90</h2>
+        </div>
+        <div class="item-menu bebida">
+          <img src="./assets/bebida2.png">
+          <h1>Corote Azul</h1>
+          <p>Pitchulinha 350ml</p>
+          <h2>R$ 5,90</h2>
+        </div>
+        <div class="item-menu bebida">
+          <img src="./assets/bebida3.png">
+          <h1>Bebida de Playboy</h1>
+          <p>Lata 450ml</p>
+          <h2>R$ 7,90</h2>
+        </div>
+      </div>
+    </div>
+    <div class="menu-categoria">
+      <div class="titulo-menu">
+        <h1>Por fim, sua sobremesa</h1>
+      </div>
+      <div class="container-menu">
+        <div class="item-menu sobremesa">
+          <img src="./assets/sobremesa1.png">
+          <h1>Pudim</h1>
+          <p>Apenas pudim</p>
+          <h2>R$ 7,90</h2>
+          
+        </div>
+        <div class="item-menu sobremesa">
+          <img src="./assets/sobremesa2.png">
+          <h1>Doce de Maracujá</h1>
+          <p>Aquela tranquilizada</p>
+          <h2>R$ 9,90</h2>
+        </div>
+        <div class="item-menu sobremesa">
+          <img src="./assets/sobremesa3.png">
+          <h1>Tortinha de morango</h1>
+          <p>A mais pedida</p>
+          <h2>R$ 11,90</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+   
+  </footer>
+  <script src="./scripts/pedido.js"></script>
+</body>
+</html>
