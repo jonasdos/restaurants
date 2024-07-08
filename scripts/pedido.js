@@ -173,3 +173,20 @@ function cancelaPedido() {
   comanda.style.display = 'none'
   console.log('cancela pedido')
 }
+
+
+const produtos = [
+  { nome: "contra-filé", categoria: "açougue", preco: 55.9 },
+  { nome: "Laranja", categoria: "hortifruti", preco: 55.9 },
+  { nome: "picanha", categoria: "açougue", preco: 55.9 },
+  { nome: "batata", categoria: "hortifruti", preco: 55.9 }
+]
+//exibir produtos no console
+function exibirProdutos() {
+
+  for (i = 0; i < produtos.length; i++) {
+    console.log(produtos[i].nome)
+
+  }
+}
+exibirProdutos()
