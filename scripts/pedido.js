@@ -177,16 +177,36 @@ function cancelaPedido() {
 
 const produtos = [
   { nome: "contra-filé", categoria: "açougue", preco: 55.9 },
-  { nome: "Laranja", categoria: "hortifruti", preco: 55.9 },
-  { nome: "picanha", categoria: "açougue", preco: 55.9 },
-  { nome: "batata", categoria: "hortifruti", preco: 55.9 }
+  { nome: "Laranja", categoria: "hortifruti", preco: 49.9 },
+  { nome: "picanha", categoria: "açougue", preco: 85.9 },
+  { nome: "batata", categoria: "hortifruti", preco: 57.9 }
 ]
 //exibir produtos no console
 function exibirProdutos() {
 
-  for (i = 0; i < produtos.length; i++) {
-    console.log(produtos[i].nome)
-
-  }
+  produtos.forEach((item) => {
+    console.log(item.nome)
+  })
 }
+
 exibirProdutos()
+// Copiar objeto alterando determinados dados(promoção 10%)
+
+function promo(promo_Produtos, percentual) {
+  const promocao = promo_Produtos.map(item => {
+    return {
+      ...item, preco: item.preco * percentual
+    }
+  })
+
+
+
+  return promocao
+}
+
+let primeiraPromocao = promo(produtos, 0.90)
+console.log(primeiraPromocao)
+
+// filtrar itens para um novo array 
+const acougue = produtos.filter(item => item.categoria === "açougue")
+console.log(acougue)
